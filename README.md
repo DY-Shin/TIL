@@ -16,3 +16,13 @@ git add . - 모든파일 애드
 > - git push -u origin master
 
 - git clone {remote_repo}
+
+1. GitHub에서 TIL이라는 GitHub Repository 만들기
+2. Local로 clone받아 README.md 만들기
+3. md파일 수정하고 commit을 생성한 뒤 push
+
+>git init
+>git remote add origin 깃헙주소
+>git push -u origin master
+>git add.
+>git push 
