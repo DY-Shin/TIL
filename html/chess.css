@@ -1,0 +1,44 @@
+@charset "utf-8";
+
+.board {
+  box-sizing: content-box;
+  width: 800px;
+  height: 800px;
+  border: 2px solid black;
+}
+
+.white {
+  box-sizing: border-box;
+  width: 100px;
+  height: 100px;
+  background-color: white;
+  float: left;
+}
+
+.black {
+  box-sizing: border-box;
+  width: 100px;
+  height: 100px;
+  background-color: black;
+  float: left;
+}
+
+#black_pawn {
+  display: none;
+}
+
+#white_queen {
+  position: relative;
+  left: -300px;
+  top: -300px;
+}
+
+#white_king {
+  position: relative;
+  left: 200px;
+}
+
+#white_rook {
+  position: relative;
+  left: -200px;
+}
