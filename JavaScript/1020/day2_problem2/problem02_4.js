@@ -9,3 +9,9 @@ const users = [
 const newUsers = users.map(({name, age, isMarried, balance}) => {
   return {name, age, isMarried, balance, isAlive: true}
 })
+
+// const newUsers = users.map((element) => {
+//   return {name: element.name, age: element.age, isMarried: element.isMarried, balance: element.balance, isAlive: true}
+// })
+
+// console.log(newUsers)
