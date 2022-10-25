@@ -8,22 +8,27 @@
 </head>
 <body>
   <script>
+    const body = document.querySelector('body')
     const title = document.createElement('h1')
     title.innerText = '오늘의 Todo'
-    const body = document.querySelector('body')
-    body.appendChild(title)
+
     const ul = document.createElement('ul')
-    body.appendChild(ul)
     const liTag1 = document.createElement('li')
-    ul.appendChild(liTag1)
-    liTag1.innerText = '양치하기'
     const liTag2 = document.createElement('li')
-    ul.appendChild(liTag2)
-    liTag2.innerText = '공부하기'
     const liTag3 = document.createElement('li')
-    ul.appendChild(liTag3)
+    
+    
+    liTag1.innerText = '양치하기'
+    liTag2.innerText = '공부하기'
     liTag3.innerText = '휴식하기'
-    console.log(body)
+    
+    body.appendChild(title)
+    body.appendChild(ul)
+    
+    ul.appendChild(liTag1)
+    ul.appendChild(liTag2)
+    ul.appendChild(liTag3)
+    
   </script>
 </body>
 </html>
