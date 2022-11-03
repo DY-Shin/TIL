@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700&display=swap" rel="stylesheet">
+  <style>
+    * {
+      font-family: 'Noto Sans KR', sans-serif;
+      color: rgb(38, 38, 38);
+    }
+
+    .container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: 500px;
+      margin: 0 auto;
+    }
+
+    h1 {
+      color: #50B8E7;
+    }
+
+    .buttonArea {
+      margin: 0 auto;
+      width: 80%;
+    }
+
+    .buttonRow {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 10px;
+      height: 80px;
+    }
+
+    .btn {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      width: 45%;
+      border: 1px solid #50B8E7;
+      cursor: pointer;
+    }
+
+    .clear {
+      margin-top: 10px;
+      outline: none;
+      background: none;
+      border: 1px solid #50B8E7;
+      width: 100px;
+      height: 50px;
+      cursor: pointer;
+      font-size: large;
+    }
+
+    .clear:hover {
+      background-color: #B9E2F5;
+    }
+
+    .type {
+      font-size: x-large;
+      font-weight: bold;
+    }
+
+    .selected {
+      background-color: #B9E2F5;
+    }
+
+  </style>
+</head>
+<body>
+  <div id="app">
+    <div class="container">
+      <h1>버튼 클릭하기</h1>
+      <section class="buttonArea">
+        <div class="buttonRow">
+          <div :class="theme1" @click="select1">
+            <span class="type">1</span>
+          </div>
+          <div :class="theme2" @click="select2">
+            <span class="type">2</span>
+          </div>
+        </div>
+        <div class="buttonRow">
+          <div :class="theme3" @click="select3">
+            <span class="type">3</span>
+          </div>
+          <div :class="theme4" @click="select4">
+            <span class="type">4</span>
+          </div>
+        </div>
+      </section>
+      <button class="clear" @click="selectAll">전체 해제</button>
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+  <script>
+    const app = new Vue({
+      el: '#app',
+      data: {
+        isActive1 : true,
+        isActive2 : true,
+        isActive3 : true,
+        isActive4 : true,
+        theme1: 'btn',
+        theme2: 'btn',
+        theme3: 'btn',
+        theme4: 'btn',
+      },
+      methods: {
+        select1: function(){
+          this.isActive1 = !this.isActive1
+          if(this.isActive1){
+            this.theme1 = 'btn'
+          }
+          else{
+            this.theme1 = 'btn selected'
+          }
+        },
+        select2: function(){
+          this.isActive2 = !this.isActive2
+          if(this.isActive2){
+            this.theme2 = 'btn'
+          }
+          else{
+            this.theme2 = 'btn selected'
+          }
+        },
+        select3: function(){
+          this.isActive3 = !this.isActive3
+          if(this.isActive3){
+            this.theme3 = 'btn'
+          }
+          else{
+            this.theme3 = 'btn selected'
+          }
+        },
+        select4: function(){
+          this.isActive4 = !this.isActive4
+          if(this.isActive4){
+            this.theme4 = 'btn'
+          }
+          else{
+            this.theme4 = 'btn selected'
+          }
+        },
+        selectAll: function(){
+          this.isActive1 = true
+          this.isActive2 = true
+          this.isActive3 = true
+          this.isActive4 = true
+          this.theme1 = 'btn'
+          this.theme2 = 'btn'
+          this.theme3 = 'btn'
+          this.theme4 = 'btn'
+        },
+      },
+    })
+  </script>
+</body>
+</html>
