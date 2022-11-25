@@ -1,0 +1,15 @@
+App.vue
+-------------
+Views
+ㄴ---accounts
+	ㄴ---LoginView
+	ㄴ---SignupView
+	ㄴ---ProfileView
+ㄴ---movies
+	ㄴ---MovieView
+	ㄴ---DetailView
+
+Components
+	ㄴ---MovieList
+	ㄴ---MovieListItem
+	ㄴ---CommentList

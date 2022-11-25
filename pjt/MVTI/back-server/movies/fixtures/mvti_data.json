@@ -1,0 +1,106 @@
+[
+  {
+    "pk": 1,
+    "model": "movies.Mvti",
+    "fields": {
+      "name": "그것이 알고싶다",
+      "genre1": 53,
+      "genre2": 80,
+      "genre3": 27,
+      "genre4": 99,
+      "genre5": 9648
+
+    }
+  },
+  {
+    "pk": 2,
+    "model": "movies.Mvti",
+    "fields": {
+      "name": "우리집에 도청장치",
+      "genre1": 28,
+      "genre2": 27,
+      "genre3": 10770,
+      "genre4": 18,
+      "genre5": 10751
+
+    }
+  },
+  {
+    "pk": 3,
+    "model": "movies.Mvti",
+    "fields": {
+      "name": "K-쿵푸판다",
+      "genre1": 28,
+      "genre2": 10752,
+      "genre3": 10751,
+      "genre4": 35,
+      "genre5": 16
+
+    }
+  },
+  {
+    "pk": 4,
+    "model": "movies.Mvti",
+    "fields": {
+      "name": "폭풍우 치는 밤에",
+      "genre1": 27,
+      "genre2": 12,
+      "genre3": 14,
+      "genre4": 9648,
+      "genre5": 16
+
+    }
+  },
+  {
+    "pk": 5,
+    "model": "movies.Mvti",
+    "fields": {
+      "name": "짝을 만난 원앙",
+      "genre1": 878,
+      "genre2": 14,
+      "genre3": 37,
+      "genre4": 10770,
+      "genre5": 10749
+
+    }
+  },
+  {
+    "pk": 6,
+    "model": "movies.Mvti",
+    "fields": {
+      "name": "딸부잣집 막내아들",
+      "genre1": 36,
+      "genre2": 10770,
+      "genre3": 35,
+      "genre4": 10751,
+      "genre5": 10402
+
+    }
+  },
+  {
+    "pk": 7,
+    "model": "movies.Mvti",
+    "fields": {
+      "name": "코난과 박단단의 행방불명",
+      "genre1": 12,
+      "genre2": 9648,
+      "genre3": 14,
+      "genre4": 10749,
+      "genre5": 16
+
+    }
+  },
+  {
+    "pk": 8,
+    "model": "movies.Mvti",
+    "fields": {
+      "name": "연애혁명",
+      "genre1": 10751,
+      "genre2": 16,
+      "genre3": 35,
+      "genre4": 10749,
+      "genre5": 10402
+
+    }
+  }
+]
